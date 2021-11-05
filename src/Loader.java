@@ -27,19 +27,25 @@ public class Loader
 //        System.out.println();
 
 
-        Cat cat3 = new Cat();
-        double maxWeight = 9000.0;
+//        Cat cat3 = new Cat();
+//        double maxWeight = 9000.0;
+//
+//        System.out.println("Cat3 status: " + cat3.getStatus());
+//        while (cat3.getWeight() <= maxWeight) {
+//            cat3.feed(1000.0);
+//        }
+//        System.out.println("Cat3 status: " + cat3.getStatus());
 
-        System.out.println("Cat3 status: " + cat3.getStatus());
-        while (cat3.getWeight() <= maxWeight) {
-            cat3.feed(1000.0);
+
+
+        Cat cat4 = new Cat();
+        double minWeight = 1000;
+        System.out.println("Cat4 status: " + cat4.getStatus());
+        while (cat4.getWeight() >= minWeight) {
+            cat4.meow();
         }
-        System.out.println("Cat3 status: " + cat3.getStatus());
+        System.out.println("Cat4 status: " + cat4.getStatus());
 
-
-
-//        Cat cat4 = new Cat();
-//        System.out.println("Cat4 weight: " + cat4.getWeight());
 //
 //        Cat cat5 = new Cat();
 //        System.out.println("Cat5 weight: " + cat5.getWeight());
