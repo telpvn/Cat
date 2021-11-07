@@ -37,6 +37,17 @@ public class Cat
         return weight;
     }
 
+    // Создание метода который будет возвращать массу съеденной еды
+    public Double getEaten() {
+        Double result = weight - originWeight;
+        return (result < 0 ? 0 : result);
+    }
+    // Создание метода сходить в туалет
+    public void pee() {
+        weight = weight - 100;
+        System.out.println("The cat is relieved");
+    }
+
     public String getStatus()
     {
         if(weight < minWeight) {
